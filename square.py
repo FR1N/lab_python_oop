@@ -8,9 +8,10 @@ class Square(Rectangle):
         self.color = FigureColor
         self.color.color = color
         self.width = width
+        super().__init__(self.width, self.width, self.color.color)
 
-    def area(self):
-        return self.width ** 2
+    #def area(self):
+        #return self.width ** 2
 
     def __repr__(self):
         return "Тип фигуры: {a}, цвет: {b}, сторона: {c}, площадь: {d}".format(a=self.name, b=self.color.color,
